@@ -1,0 +1,184 @@
+html, body {
+	margin:0;
+	padding:0;
+	border:0;
+	height:100%;
+}
+
+body {
+	background-color:#4e4ef4;
+	background-image:-webkit-gradient(
+		linear, 
+		0% 0%, 
+		0% 100%, 
+		from(#b0cdde), 
+		color-stop(50%, #b0cdde), 
+		color-stop(50%, #77a8bf), 
+		to(#77a8bf));
+	background-size: 50px 50px;
+}
+
+/* Forces images to scale to device's resolution */
+img {max-width: 100%;}
+
+/* Styles header, which contains the "Where's My Lane" text */
+.header {
+	top:0px;
+	left:0px;
+	padding-bottom:1%;
+	padding-top:4%;
+	position:fixed;
+	z-index: 15;
+	height:40px;
+	width:100%;
+	background-color:#e0e2e2;
+	border-bottom:solid 1px #c9cbcb;
+}
+
+/* Styling for Updates Page */
+#listhead {
+	z-index:10;
+	position:fixed;
+	width:100%;
+	top:10%;
+	background-color:#9cd99c;
+	border-bottom:solid 1px #73a073;
+}
+
+#wrapper {
+	top:20%;
+	margin-bottom:-40%;
+	margin:0%;
+	padding:0%;
+	z-index:5;
+	max-height:100%;
+	overflow:auto;
+	position:absolute;
+	list-style-type:none;
+}
+
+#wrapper li {
+	border:1px solid  #000000;
+	border-style:solid none solid none;
+	background-color: #ffffff;
+	padding:10px;
+	word-wrap:break-word;
+}
+
+div#time { display:block; }
+
+/* Styling for footer containing navigation icons */
+.footer {	
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	z-index: 15;
+	margin-top: -60px; 
+	height: 60px;
+	width: 100%;
+	background-color: #e0e2e2;
+	border-top:solid 1px #c9cbcb;
+} 
+
+.footer ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.footer li {display:inline;}
+
+.footer span {padding:4%;}
+
+.footer li#report_current, #map_current, #updates_current, #about_current {
+	padding-top:10%;
+	margin:1%;
+	border-radius:10px;
+	background-color:#9cd99c;
+}
+
+
+
+/* Styling for button press animation. */
+#frame1 {
+	z-index:5;
+	position:absolute;
+}
+
+#frame2 {position:absolute;}
+
+/* Styling for various boxes and buttons */
+#signup_box {
+	margin-top:40%;
+	margin-left:5%;
+	margin-right: 5%;
+	padding-top:3%;
+	padding-bottom: 3%;
+	z-index:15;
+	background-color:#e0e2e2;
+	border-radius:10px;
+}
+
+#landing_box {
+	margin:5% 5% 5% 5%;
+	padding:3%;
+	z-index:15;
+	background-color:#e0e2e2;
+	border-radius:10px;
+}
+
+#data_disclaimer {
+	color:#f64c4c;
+	background-color:#f6df4c;
+	margin:5% 5% 5% 5%;
+	padding:3%;
+	border-radius: 10px;
+}
+#submit_button {
+	font-size:large;
+	margin:3% 30% 0% 30%;
+	border-radius:10px;
+	z-index:15;
+	background-color:#9cd99c;
+	background:-webkit-gradient(
+		linear, 
+		50% 0%, 
+		50% 100%, 
+		from(#9cd99c),  
+		to(#73a073));
+	border:2px solid #73a073;
+}
+
+/*#loading {visibility:visible;}*/
+
+#actionbutton {
+	margin:0% 15% 0% 15%;
+	padding:5%;
+	z-index:15;
+	background-color:#9cd99c;
+	background:-webkit-gradient(
+		linear, 
+		50% 0%, 
+		50% 100%, 
+		from(#9cd99c),  
+		to(#73a073));
+	border:2px solid #73a073;
+	border-radius:10px;
+}
+
+#about_message {
+	margin:0% 5% 0% 5%;
+	top:14%;
+	position:relative;
+	padding:3%;
+	z-index:15;
+	background-color:#e0e2e2;
+	border-radius:10px;
+}
+
+/* Styling for map */
+#map_canvas {
+	/* margin:0% 5% 0% 5%; */
+    height:76%;
+    top:11%;
+}

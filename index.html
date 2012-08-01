@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Report</title>
+    <script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+    <script type="text/javascript" src="js/link_to_page.js"></script>
+    <script type="text/javascript" src="js/getLocation.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/sendPosition.js"></script>
+    <script type="text/javascript" src="js/report_logic.js"></script>		
+  </head>
+  <body>
+    <div id="reportpage">
+        <center><div class="header">
+            <img src="img/WML_header.png">
+        </div></center>
+	    <div id="report_button" ontouchstart="sendPosition()">
+            <img id="frame2" src="img/button_frame_2.png">
+            <img id="frame1" src="img/button_frame_1.png">            
+        </div>
+        <div class="footer">
+            <footer>
+        	   <ul>
+        		  <li id="report_current"><span ontouchstart="link_report()"><img src="img/img_report_link.png"></span></li>
+        		  <li><span ontouchstart="link_map()"><img src="img/img_map_link.png"></span></li> 	   		
+    	   		  <li><span ontouchstart="link_updates()"><img src="img/img_update_link.png"></span></li>
+    	   		  <li><span ontouchstart="link_about()"><img src="img/img_about_link.png"></span></li>
+    	   	   </ul>
+            </footer>
+        </div>
+    </div>
+  </body>
+</html>

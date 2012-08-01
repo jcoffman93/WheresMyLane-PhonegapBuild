@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Updates</title>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/getMessages.js"></script>
+		<script type="text/javascript" src="js/link_to_page.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<script type="text/javascript" src="js/iscroll-lite.js"></script>
+	</head>
+	
+	<body>
+
+		<div class="header">
+        	<center><img src="img/WML_header.png"></center>
+    	</div>
+
+    	<!-- ul#wrapper contains messages pulled from the server. Support for scrolling
+    		within a container on Android/iOS is imperfect. The iScroll 4 script allows for this functionality; however, it requires a specific page structure to function correctly. The scrollable area (in this case, ul#wrapper) must not be placed within a container. See iScroll 4 documentation for additional reference (http://cubiq.org/iscroll-4).
+    	-->
+    	<div id="listhead"><center><h3>Updates</h3></center></div>
+		<ul id="wrapper">
+			<li>The average amount of accidents involving bicyclists in Boston has decreased. Good job!</li>
+			<li>Additional enforcement has been sent to Main Street.</li>
+			<li>Be sure to slow down to a safe speed before using this app.</li>
+			<li>Incidence of double parked vehicles around city hall has decreased by 10%!</li>
+			<li>Additional officers have been sent to Columbus Street.</li>
+			<li>Thank you for using Where's My Lane.</li>
+		</ul>
+		<div class="footer">
+        	<ul>
+        		<li><span ontouchstart="link_report()"><img src="img/img_report_link.png"></span></li>
+        		<li><span ontouchstart="link_map()"><img src="img/img_map_link.png"></span></li> 	   		
+    	   		<li id="updates_current"><span ontouchstart="link_updates()"><img src="img/img_update_link.png"></span></li>
+    	   		<li><span ontouchstart="link_about()"><img src="img/img_about_link.png"></span></li>
+    	   	</ul>
+    	</div>
+	
+	</body>
+</html>
