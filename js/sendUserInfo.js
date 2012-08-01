@@ -7,7 +7,11 @@ $(document).ready(function() {
             { "email": $("#email").val() },
             function(data) {
                 storage=window.localStorage;
-                alert(data["response"]);
+                if(data["response"]) {
+                    alert(data["response"]);
+                } else {
+                    alert("Server unavailable");
+                }
                 if(data["token"]) {
                     storage.setItem("token", data["token"]);
                     storage.setItem("numReports", data["NumReports"]);
