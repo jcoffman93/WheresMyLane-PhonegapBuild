@@ -3,7 +3,7 @@ $(document).ready(function() {
 //     //$("#loading").style.visibility="hidden";
     $("#submit_button").click(function() {
         $.post(
-            "http://wheresmylane.org/users/mobile_create.json",
+            "http://www.wheresmylane.org/users/mobile_create.json",
             { "email": $("#email").val() },
             function(data) {
                 storage=window.localStorage;

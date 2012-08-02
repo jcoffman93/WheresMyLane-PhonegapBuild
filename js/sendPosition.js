@@ -27,7 +27,7 @@ function sendPosition() {
             var time=date.getTime();
             $.ajax( {
                 type: "POST",
-                url: "http://wheresmylane.org/reports/mobile_create.json",
+                url: "http://www.wheresmylane.org/reports/mobile_create.json",
                 data: { latitude: position.coords.latitude, 
                     longitude: position.coords.longitude, 
                     timestamp: time, 
